@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Work Log — Work Hours Tracker</title>
+<meta name="description" content="Work Log is an Android app for tracking work hours, shifts and salary, with monthly Excel reports, Google Drive backup and automatic report emailing.">
+<style>
+  :root {
+    --bg: #ffffff; --fg: #1f2430; --muted: #5b6472; --accent: #1a73e8;
+    --card: #f5f7fa; --border: #e3e7ee;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #14171c; --fg: #e8eaf0; --muted: #9aa3b2; --accent: #6fa8ff;
+            --card: #1d2229; --border: #2a3038; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 48px 20px 64px; }
+  h1 { font-size: 2rem; margin: 0 0 4px; }
+  .tagline { color: var(--muted); margin: 0 0 28px; }
+  h2 { font-size: 1.2rem; margin: 32px 0 8px; }
+  p { margin: 8px 0; }
+  ul { margin: 8px 0; padding-left: 22px; }
+  li { margin: 4px 0; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .btn { display: inline-block; background: var(--accent); color: #fff; padding: 10px 18px;
+         border-radius: 8px; font-weight: 600; margin: 12px 12px 0 0; }
+  .btn:hover { text-decoration: none; opacity: .92; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+          padding: 18px 20px; margin-top: 28px; }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--border);
+           color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Work Log</h1>
+  <p class="tagline">Work hours, shifts &amp; salary tracker for Android</p>
+
+  <p>Work Log helps employees track their work hours: clock in and out (including with NFC tags),
+     manage shifts, overtime, bonuses and expenses, and calculate salary automatically.
+     Your data is stored locally on your device.</p>
+
+  <h2>Main features</h2>
+  <ul>
+    <li>One-tap clock in / clock out, with support for NFC tags</li>
+    <li>Shift, overtime, sick day and vacation tracking</li>
+    <li>Automatic salary calculation per your pay settings</li>
+    <li>Monthly report exported as an Excel (.xls) file</li>
+    <li>Optional backup of your data to your own Google Drive</li>
+    <li>Optional monthly report email, sent from your own Gmail account to your employer —
+        only if you enable it and choose the recipients</li>
+  </ul>
+
+  <h2>How Work Log uses your Google account</h2>
+  <p>Signing in with Google is optional and used only for two features you control:</p>
+  <ul>
+    <li><strong>Google Drive backup</strong> — the app saves its backup files to your Drive.
+        It can only access files it created itself.</li>
+    <li><strong>Sending your monthly report</strong> — with your permission, the app emails your
+        monthly Excel report from your Gmail address to recipients you chose.
+        The app cannot read your inbox or any of your messages.</li>
+  </ul>
+  <p>Details in our <a href="privacy.html">Privacy Policy</a>.</p>
+
+  <a class="btn" href="https://play.google.com/store/apps/details?id=com.bibas.worksclocks">Get it on Google Play</a>
+  <a class="btn" href="privacy.html" style="background: var(--card); color: var(--accent); border: 1px solid var(--border);">Privacy Policy</a>
+
+  <div class="card">
+    <strong>Support</strong>
+    <p>Questions or issues? Email us at
+       <a href="mailto:matanbib24@gmail.com">matanbib24@gmail.com</a>.</p>
+  </div>
+
+  <footer>
+    © 2026 Work Log · <a href="privacy.html">Privacy Policy</a>
+  </footer>
+</main>
+</body>
+</html>
